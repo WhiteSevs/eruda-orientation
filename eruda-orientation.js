@@ -1,11 +1,10 @@
 // https://code.tutsplus.com/tutorials/an-introduction-to-the-device-orientation-api--cms-21067
 ;(function(root, factory) {
-  if (typeof define === 'function' && define.amd) {
-    define([], factory)
-  } else if (typeof module === 'object' && module.exports) {
-    module.exports = factory()
+  if (typeof exports === "object" && typeof module !== "undefined") {
+    module.exports = factory();
   } else {
-    root.erudaOrientation = factory()
+    root = typeof globalThis !== "undefined" ? globalThis : root || self;
+    root.Qmsg = factory(root);
   }
 })(this, function() {
   return function(eruda) {
