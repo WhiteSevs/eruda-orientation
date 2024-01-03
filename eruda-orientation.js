@@ -4,7 +4,7 @@
     module.exports = factory();
   } else {
     root = typeof globalThis !== "undefined" ? globalThis : root || self;
-    root.Qmsg = factory(root);
+    root.erudaOrientation = factory(root);
   }
 })(this, function() {
   return function(eruda) {
