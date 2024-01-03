@@ -3,10 +3,10 @@ module.exports = {
     browser: true,
     es6: true,
     amd: true,
-    commonjs: true
+    commonjs: true,
   },
   extends: 'eslint:recommended',
   rules: {
-    'no-extra-semi': ['off']
-  }
+    'no-extra-semi': ['off'],
+  },
 }
